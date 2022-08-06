@@ -1,9 +1,9 @@
 class NameModel{
   final String name;
   final String kodeName;
-  final String jurusan;
+  final String Alamat;
 
-  NameModel(this.name,this.kodeName,this.jurusan);
+  NameModel(this.name,this.kodeName,this.Alamat);
 }
 
 List<NameModel> namaModel = [

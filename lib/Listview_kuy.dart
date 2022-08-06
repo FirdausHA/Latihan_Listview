@@ -35,7 +35,7 @@ class _listviewState extends State<listview> {
           ),
           Container(
             margin: EdgeInsets.only(top: 2),
-            child: Text(namaModel[index].jurusan),
+            child: Text(namaModel[index].Alamat),
           ),
         ],
       ),
@@ -45,7 +45,7 @@ class _listviewState extends State<listview> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Data Siswa kel.1 PPLG 1"),),
+      appBar: AppBar(title: Text("Data Siswa Kel.1 PPLG 1"),),
       body: ListView.builder(
         padding: EdgeInsets.all(5),
         itemCount: namaModel.length,
