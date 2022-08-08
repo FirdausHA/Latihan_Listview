@@ -16,7 +16,7 @@ class _listviewState extends State<listview> {
     return CircleAvatar(
       radius: 24,
       child: Text(
-        namaModel[index].kodeName,
+        SiswaModel[index].Gender,
         style: TextStyle(color: Colors.white),
       ),
     );
@@ -29,13 +29,21 @@ class _listviewState extends State<listview> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            namaModel[index].name,
+            SiswaModel[index].name,
             style: TextStyle(fontSize: 16,
                 fontWeight: FontWeight.w600),
           ),
           Container(
+            margin: EdgeInsets.only(top: 1),
+            child: Text(SiswaModel[index].Kelas),
+          ),
+          Container(
             margin: EdgeInsets.only(top: 2),
-            child: Text(namaModel[index].Alamat),
+            child: Text(SiswaModel[index].Hobi),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 3),
+            child: Text(SiswaModel[index].Alamat),
           ),
         ],
       ),
@@ -45,16 +53,16 @@ class _listviewState extends State<listview> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Data Siswa Kel.1 PPLG 1"),),
+      appBar: AppBar(title: Text("Data Siswa PPLG 1"),),
       body: ListView.builder(
         padding: EdgeInsets.all(5),
-        itemCount: namaModel.length,
+        itemCount: SiswaModel.length,
         itemBuilder: (buildContext, index) {
           return GestureDetector(
             onTap: (){
               //snackbar
               ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: Text("${namaModel[index].name}"),
+                content: Text("${SiswaModel[index].name}"),
                 duration: Duration(seconds: 2),
               ));
             },

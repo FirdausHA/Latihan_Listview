@@ -1,28 +1,31 @@
 class NameModel{
   final String name;
-  final String kodeName;
+  final String Gender;
+  final String Kelas;
+  final String Hobi;
   final String Alamat;
 
-  NameModel(this.name,this.kodeName,this.Alamat);
+
+  NameModel(this.name,this.Gender,this.Kelas, this.Hobi, this.Alamat);
 }
 
-List<NameModel> namaModel = [
-  NameModel("Adhanafi Ilyas Sutejo", "L", "Jakarta Selatan, Hobi Bermain Game"),
-  NameModel("Ahmad Aziz Wira Widodo", "L", "Jepara, Hobi Basket"),
-  NameModel("Akbar Rizqullah Putra Susanto", "L", "Semarang, Hobi Badminton/Futsal"),
-  NameModel("Alwan Athallah Mumtaz", "L", "Citayem, Hobi Rebahan"),
-  NameModel("Amri Iqra Samudera Al-Fatiaha", "L", "Nusa Tenggara Barat, Hobi Badminton"),
-  NameModel("Anakku Lanang Sejati Adli", "L", "Kudus, Hobi Baca Buku Komik"),
-  NameModel("Andika Setya Eka Nata", "L", "Kudus, Hobi Sepedaan"),
-  NameModel("Antariksa Kusuma Hermawan", "L", "Kudus, Hobi Main Genshin Impach"),
-  NameModel("Azzra Rienov Fahlivi", "P", "Depok, Hobi Mencoding"),
-  NameModel("Bayu Septian Kurniawan", "L", "Kudus, Hobi Mencoding"),
-  NameModel("Bhre Nabi Faeyzal", "L", "Bogor, Hobi Nonton Anime"),
-  NameModel("Bimo Adi Bramantyo", "L", "Cikarang, Hobi Basket"),
-  NameModel("Daffa Syauqi Syarif", "L", "Kudus, Hobi Bermain Game"),
-  NameModel("Danar Gading", "L", "Jakarta Timur, Hobi Futsal"),
-  NameModel("Dimas Bagus Adityas", "L", "Kudus, Hobi Bermain game"),
-  NameModel("Firdaus Hafidz Al-kaff", "L", "Demak, Hobi Badminton"),
-  NameModel("Hegel Al Rafli", "L", "Temanggung, Hobi futsal"),
-  NameModel("Hibatullah Fawwaz Hana", "L", "Kudus, Hobi Mecoding & Bermain Game"),
+List<NameModel> SiswaModel = [
+  NameModel("Adhanafi Ilyas Sutejo", "L", "11 PPLG 1","Hobi Bermain Game", "Jakarta Selatan"),
+  NameModel("Ahmad Aziz Wira Widodo", "L", "11 PPLG 1", "Hobi Basket", "Jepara"),
+  NameModel("Akbar Rizqullah Putra Susanto", "L", "11 PPLG 1", "Hobi Badminton/Futsal", "Semarang"),
+  NameModel("Alwan Athallah Mumtaz", "L", "11 PPLG 1", "Hobi Rebahan", "Citayem"),
+  NameModel("Amri Iqra Samudera Al-Fatiahah", "L", "11 PPLG 1", "Hobi Badminton", "Nusa Tenggara Barat"),
+  NameModel("Anakku Lanang Sejati Adli", "L", "11 PPLG 1", "Hobi Baca Buku Komik", "Kudus"),
+  NameModel("Andika Setya Eka Nata", "L", "11 PPLG 1", "Hobi Sepedaan", "Kudus"),
+  NameModel("Antariksa Kusuma Hermawan", "L", "11 PPLG 1", "Hobi Main Genshin Impach", "Kudus"),
+  NameModel("Azzra Rienov Fahlivi", "P", "11 PPLG 1", "Hobi Mencoding", "Depok"),
+  NameModel("Bayu Septian Kurniawan", "L", "11 PPLG 1", "Hobi Mencoding", "Kudus"),
+  NameModel("Bhre Nabil Faeyza", "L", "11 PPLG 1", "Hobi Nonton Anime", "Bogor"),
+  NameModel("Bimo Adi Bramantyo", "L", "11 PPLG 1", "Hobi Basket", "Cikarang"),
+  NameModel("Daffa Syauqi Syarif", "L", "11 PPLG 1", "Hobi Bermain Game", "Kudus"),
+  NameModel("Danar Gading", "L", "11 PPLG 1", "Hobi Futsal", "Jakarta Timur"),
+  NameModel("Dimas Bagus Adityas", "L", "11 PPLG 1", "Hobi Bermain game", "Kudus"),
+  NameModel("Firdaus Hafidz Al-kaff", "L", "11 PPLG 1", "Hobi Badminton", "Demak"),
+  NameModel("Hegel Al Rafli", "L", "11 PPLG 1", "Hobi Futsal", "Temanggung"),
+  NameModel("Hibatullah Fawwaz Hana", "L", "11 PPLG 1", "Hobi Mecoding & Bermain Game", "Kudus"),
 ];
