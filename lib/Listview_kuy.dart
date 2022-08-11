@@ -42,8 +42,7 @@ class _listviewState extends State<listview> {
             child: Text(SiswaModel[index].Hobi),
           ),
           Container(
-            margin: EdgeInsets.only(top: 3),
-            child: Text(SiswaModel[index].Alamat),
+            margin: EdgeInsets.only(top: 3),      child: Text(SiswaModel[index].Alamat),
           ),
         ],
       ),
@@ -53,19 +52,33 @@ class _listviewState extends State<listview> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Data Siswa PPLG 1"),),
+      // appBar: AppBar(title: Text("Data Siswa PPLG 1"),),
       body: ListView.builder(
         padding: EdgeInsets.all(5),
         itemCount: SiswaModel.length,
         itemBuilder: (buildContext, index) {
           return GestureDetector(
-            onTap: (){
-              //snackbar
-              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                content: Text("${SiswaModel[index].name}"),
-                duration: Duration(seconds: 2),
-              ));
-            },
+            onTap: () => showDialog(context: context, builder: (BuildContext context)=> AlertDialog(
+              title: Text("Hapus Kontak"),
+              content: Text("Anda yakin ingin menghapus kontak ${SiswaModel[index].name}?"),
+              actions: <Widget>[
+                FlatButton(
+                  child: Text("Ya"),
+                  onPressed: (){
+                    setState(() {
+                      SiswaModel.removeAt(index);
+                    });
+                    Navigator.pop(context);
+                  },
+                ),
+                FlatButton(
+                  child: Text("Tidak"),
+                  onPressed: (){
+                    Navigator.pop(context);
+                  },
+                ),
+              ],
+            )),
             child: Container(
               margin: EdgeInsets.all(10),
               child: Row(
