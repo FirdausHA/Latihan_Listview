@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_listview/ListAllFootball.dart';
 import 'package:latihan_listview/Listview_kuy.dart';
-
+import 'package:latihan_listview/Home.dart';
 import 'TabbarExample.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: TabbarExample(),
+      home: Home(),
     );
   }
 }

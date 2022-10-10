@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:latihan_listview/ListAllFootball.dart';
+import 'package:latihan_listview/ListviewPhoneNumber.dart';
 import 'package:latihan_listview/Listview_kuy.dart';
 
 class TabbarExample extends StatefulWidget {
@@ -52,8 +54,8 @@ class _TabbarExampleState extends State<TabbarExample> with SingleTickerProvider
           controller: _controller,
           children: [
             listview(),
-            Center(child: Text("Not Found")),
-            Center(child: Text("Tab 3")),
+            ListAllFootbal(),
+            ListPhoneNumber(),
           ],
         ),
       ),
