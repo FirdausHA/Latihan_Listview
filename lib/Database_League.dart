@@ -1,7 +1,7 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-import 'Favorite_Football.dart';
+import 'Favorite_Football_Model.dart';
 
 
 class FootballDatabase {

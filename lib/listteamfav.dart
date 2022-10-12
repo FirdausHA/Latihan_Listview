@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihan_listview/Database_Helper.dart';
-import 'package:latihan_listview/Favorite_Football.dart';
+import 'package:latihan_listview/Database_League.dart';
+import 'package:latihan_listview/Favorite_Football_Model.dart';
 
 class ListFav extends StatefulWidget {
   const ListFav({Key? key}) : super(key: key);

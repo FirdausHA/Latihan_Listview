@@ -4,8 +4,8 @@ import 'package:sqflite/sqflite.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-import 'Database_Helper.dart';
-import 'Favorite_Football.dart';
+import 'Database_League.dart';
+import 'Favorite_Football_Model.dart';
 
 class DetailPage extends StatefulWidget {
   DetailPage({Key? key, required this.teams}) : super(key: key);
