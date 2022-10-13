@@ -82,8 +82,8 @@ class _DetailPageState extends State<DetailPage> {
                 children: [
                   Container(
                     margin: EdgeInsets.only(right: 20),
-                    height: 100,
-                    width: 100,
+                    height: 70,
+                    width: 70,
                     child: Image.network(widget.teams.strTeamBadge.toString()),
                   ),
                   Column(
@@ -95,13 +95,13 @@ class _DetailPageState extends State<DetailPage> {
                         widget.teams.strTeam.toString(),
                         style: TextStyle(
                             color: Colors.black,
-                            fontSize: 20,
+                            fontSize: 18,
                             fontWeight: FontWeight.bold),
                       )),
                       Container(
                         child: Text(
                           widget.teams.strStadium.toString(),
-                          style: TextStyle(color: Colors.black, fontSize: 16),
+                          style: TextStyle(color: Colors.black, fontSize: 14),
                         ),
                       ),
                     ],

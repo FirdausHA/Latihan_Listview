@@ -105,25 +105,7 @@ class _ListFavState extends State<ListFav> {
                     IconButton(onPressed: (){
                       showDeleteDialog(context, index);
                     }, icon: Icon(Icons.delete, color: Colors.red))
-                    // Spacer(),
-                    // IconButton(
-                    //     icon: Icon(Icons.favorite, size: 30),
-                    //     color: checkExist
-                    //         ? Colors.red
-                    //         : Colors.black.withOpacity(.5),
-                    //     onPressed: () {
-                    //       checkExist
-                    //           ? deleteData(premierLeagueFootball!
-                    //           .teams![index].strTeam
-                    //           .toString())
-                    //           : addData(
-                    //           premierLeagueFootball!
-                    //               .teams![index].strTeam
-                    //               .toString(),
-                    //           premierLeagueFootball!
-                    //               .teams![index].strTeamBadge
-                    //               .toString());
-                    //     }),
+
                   ],
                 ),
               ),
